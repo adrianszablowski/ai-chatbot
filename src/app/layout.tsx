@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${arimo.className} h-screen w-screen flex flex-col`}>
+			<body className={`${arimo.className} min-h-screen w-screen flex flex-col`}>
 				<ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
 					<Header />
 					{children}
