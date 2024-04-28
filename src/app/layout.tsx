@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { arimo } from './fonts';
 import Header from './components/header';
+import { ThemeProvider } from './components/theme-provider';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -16,8 +17,10 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={arimo.className}>
-				<Header />
-				{children}
+				<ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
+					<Header />
+					{children}
+				</ThemeProvider>
 			</body>
 		</html>
 	);
