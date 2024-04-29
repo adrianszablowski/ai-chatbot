@@ -3,7 +3,7 @@ import Chat from './components/chat';
 
 export default function Page() {
 	return (
-		<div className='max-h-screen overflow-hidden'>
+		<div className='h-[94dvh] overflow-hidden'>
 			<Chat />
 		</div>
 	);

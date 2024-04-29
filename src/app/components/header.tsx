@@ -4,7 +4,7 @@ import { ModeToggle } from './mode-toggle';
 
 export default function Header() {
 	return (
-		<header className='flex h-16 w-full shrink-0 items-center border-b border-border'>
+		<header className='flex h-[6dvh] w-full shrink-0 items-center border-b border-border'>
 			<div className='container flex justify-between'>
 				<Link className='flex items-center justify-center gap-2' href='/'>
 					<BotMessageSquareIcon />
