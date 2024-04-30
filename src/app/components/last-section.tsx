@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { cormorant_garamond } from '../fonts';
 import { Button } from '@/components/ui/button';
+import GetStartedButton from './get-started-button';
 
 export default function LastSection() {
 	return (
@@ -17,9 +18,7 @@ export default function LastSection() {
 					</p>
 				</div>
 				<div className='flex flex-col gap-2 min-[400px]:flex-row justify-center'>
-					<Button>
-						<Link href='#'>Get Started</Link>
-					</Button>
+					<GetStartedButton />
 					<Button className='bg-primary-foreground border border-border text-primary hover:bg-secondary'>
 						<Link href='#'>Learn More</Link>
 					</Button>

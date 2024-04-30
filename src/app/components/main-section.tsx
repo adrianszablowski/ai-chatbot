@@ -1,8 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
 import { cormorant_garamond } from '../fonts';
-import { Button } from '@/components/ui/button';
+import GetStartedButton from './get-started-button';
 
 export default function MainSection() {
 	return (
@@ -18,9 +16,7 @@ export default function MainSection() {
 						Experience seamless interactions, personalized responses, and unparalleled efficiency.
 					</p>
 					<div className='flex flex-col gap-2 min-[400px]:flex-row'>
-						<Button>
-							<Link href='#'>Get Started</Link>
-						</Button>
+						<GetStartedButton />
 					</div>
 				</div>
 				<Image
